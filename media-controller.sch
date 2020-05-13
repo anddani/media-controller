@@ -1,0 +1,124 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L tmk:ATMEGA32U4 U?
+U 1 1 5EBC3FCC
+P 5750 3100
+F 0 "U?" H 5775 4437 60  0000 C CNN
+F 1 "ATMEGA32U4" H 5775 4331 60  0000 C CNN
+F 2 "" H 5750 3100 60  0000 C CNN
+F 3 "" H 5750 3100 60  0000 C CNN
+	1    5750 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L tmk:XTAL_GND X1
+U 1 1 5EBC62CF
+P 3600 3750
+F 0 "X1" H 3600 4042 60  0000 C CNN
+F 1 "XTAL_GND" H 3600 3936 60  0000 C CNN
+F 2 "" H 3600 3750 60  0000 C CNN
+F 3 "" H 3600 3750 60  0000 C CNN
+	1    3600 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5EBC6863
+P 3200 3950
+F 0 "C1" H 3292 3996 50  0000 L CNN
+F 1 "22p" H 3292 3905 50  0000 L CNN
+F 2 "" H 3200 3950 50  0001 C CNN
+F 3 "~" H 3200 3950 50  0001 C CNN
+	1    3200 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 5EBC6EBF
+P 4000 3950
+F 0 "C2" H 4092 3996 50  0000 L CNN
+F 1 "22p" H 4092 3905 50  0000 L CNN
+F 2 "" H 4000 3950 50  0001 C CNN
+F 3 "~" H 4000 3950 50  0001 C CNN
+	1    4000 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3850 4000 3750
+Wire Wire Line
+	4000 3750 3900 3750
+Wire Wire Line
+	3300 3750 3200 3750
+Wire Wire Line
+	3200 3750 3200 3850
+Wire Wire Line
+	3200 4050 3200 4150
+Wire Wire Line
+	4000 4150 4000 4050
+Wire Wire Line
+	3200 4150 3600 4150
+Wire Wire Line
+	3600 4150 3600 3950
+Connection ~ 3600 4150
+Wire Wire Line
+	3600 4150 4000 4150
+$Comp
+L tmk:GND #PWR?
+U 1 1 5EBCC394
+P 3600 4350
+F 0 "#PWR?" H 3600 4400 20  0001 C CNN
+F 1 "GND" H 3600 4409 30  0000 C CNN
+F 2 "" H 3600 4350 60  0000 C CNN
+F 3 "" H 3600 4350 60  0000 C CNN
+	1    3600 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3750 4000 3650
+Connection ~ 4000 3750
+Wire Wire Line
+	4700 3550 3200 3550
+Wire Wire Line
+	3200 3550 3200 3750
+Connection ~ 3200 3750
+Wire Wire Line
+	4000 3650 4700 3650
+Wire Wire Line
+	3600 4350 3600 4150
+$Comp
+L power:VCC #PWR?
+U 1 1 5EBE1A37
+P 950 800
+F 0 "#PWR?" H 950 650 50  0001 C CNN
+F 1 "VCC" H 967 973 50  0000 C CNN
+F 2 "" H 950 800 50  0001 C CNN
+F 3 "" H 950 800 50  0001 C CNN
+	1    950  800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L tmk:GND #PWR?
+U 1 1 5EBE1D6B
+P 900 1300
+F 0 "#PWR?" H 900 1350 20  0001 C CNN
+F 1 "GND" H 900 1359 30  0000 C CNN
+F 2 "" H 900 1300 60  0000 C CNN
+F 3 "" H 900 1300 60  0000 C CNN
+	1    900  1300
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
