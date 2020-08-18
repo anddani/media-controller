@@ -597,8 +597,6 @@ NoConn ~ 4700 3950
 NoConn ~ 4700 4050
 NoConn ~ 4700 4150
 NoConn ~ 4700 3150
-NoConn ~ 4700 3050
-NoConn ~ 4700 2950
 NoConn ~ 4700 2850
 NoConn ~ 4700 2750
 NoConn ~ 4700 2050
@@ -726,4 +724,36 @@ Wire Wire Line
 Connection ~ 2900 4300
 Wire Wire Line
 	2900 4300 3000 4300
+$Comp
+L Device:Rotary_Encoder SW2
+U 1 1 5F43CD25
+P 8850 4000
+F 0 "SW2" H 9080 4046 50  0000 L CNN
+F 1 "Rotary_Encoder" H 9080 3955 50  0000 L CNN
+F 2 "" H 8700 4160 50  0001 C CNN
+F 3 "~" H 8850 4260 50  0001 C CNN
+	1    8850 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F43D951
+P 8350 4000
+F 0 "#PWR?" H 8350 3750 50  0001 C CNN
+F 1 "GND" V 8355 3872 50  0000 R CNN
+F 2 "" H 8350 4000 50  0001 C CNN
+F 3 "" H 8350 4000 50  0001 C CNN
+	1    8350 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8350 4000 8550 4000
+Text Label 8550 4100 2    50   ~ 0
+EN1
+Text Label 8550 3900 2    50   ~ 0
+EN2
+Text Label 4700 3050 2    50   ~ 0
+EN1
+Text Label 4700 2950 2    50   ~ 0
+EN2
 $EndSCHEMATC
