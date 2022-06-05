@@ -1,3 +1,4 @@
 fp-lib-table
 *-cache.lib
 *.bak
+.DS_Store

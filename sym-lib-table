@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "media-controller-rescue")(type "Legacy")(uri "${KIPRJMOD}/media-controller-rescue.lib")(options "")(descr ""))
+)
